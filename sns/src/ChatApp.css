@@ -1,0 +1,10 @@
+.message-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timestamp {
+    color: gray;
+    margin-right: 10px;
+}
