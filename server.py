@@ -27,7 +27,7 @@ async def connect(websocket: WebSocket):
         while True:
             data = await websocket.receive_text()
             
-            messageManager.post(data) # 메시지관리자에게 메시지 전달
+            await messageManager.post(data) # 메시지관리자에게 메시지 전달
 
             for client in clients:
                 await client.send_text(data)

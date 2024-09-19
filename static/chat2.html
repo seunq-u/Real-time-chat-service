@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>채팅 화면</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #fafafa;
+            margin: 0;
+            padding: 20px;
+        }
+        .chat-container {
+            max-width: 500px;
+            margin: auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            padding: 15px;
+        }
+        .message {
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 8px;
+            position: relative;
+        }
+        .message-A {
+            background-color: #e8f5fd;
+            text-align: left;
+            margin-left: 0;
+        }
+        .message-B {
+            background-color: #ffebee;
+            text-align: right;
+            margin-right: 0;
+        }
+        .profile {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="message message-A">
+        <div class="profile">A</div>
+        안녕하세요!
+    </div>
+    <div class="message message-A">
+        <div class="hidden-profile">A</div>
+        또 만났네요!
+    </div>
+    <div class="message message-B">
+        <div class="profile">B</div>
+        안녕하세요, A님!
+    </div>
+    <div class="message message-A">
+        <div class="profile">A</div>
+        오늘 날씨가 좋네요.
+    </div>
+</div>
+
+</body>
+</html>
